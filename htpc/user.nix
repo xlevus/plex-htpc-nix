@@ -9,7 +9,7 @@ in
   };
 
   home-manager.users."${username}" = {
-    home.stateVersion = stateVersion;
+    home.stateVersion = config.system.stateVersion;
     home.enableNixpkgsReleaseCheck = false;
     xsession.windowManager.i3 = {
         enable = true;
